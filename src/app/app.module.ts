@@ -11,6 +11,7 @@ import {
   MatPaginatorModule,
   MatSelectModule,
   MatTableModule,
+  MatProgressBarModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { ProductsService } from './common/services/products.service';
     MatPaginatorModule,
     MatSelectModule,
     MatTableModule,
+    MatProgressBarModule,
   ],
   
   providers: [

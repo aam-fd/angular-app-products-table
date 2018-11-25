@@ -47,10 +47,16 @@
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row class="table-row" *matRowDef="let row; columns: displayedColumns;"
-        (click)="selection.toggle(row)">
-    </tr>
+    <div *ngIf="products && products.length > 0">
+      <tr mat-row class="table-row" *matRowDef="let row; columns: displayedColumns;"
+          (click)="selection.toggle(row)">
+      </tr>
+    </div>
   </table>
+
+  <div *ngIf="!products || !products.length" class="preloader-container">Data loading...
+    <mat-progress-bar mode="indeterminate">loading...</mat-progress-bar>
+  </div>
 
   <div class="table-actions">
     <button mat-raised-button 

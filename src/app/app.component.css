@@ -42,7 +42,8 @@
 
 .page-header,
 table,
-.table-actions {
+.table-actions,
+.preloader-container {
   width: 70%;
   min-width: 550px;
 }
@@ -70,6 +71,15 @@ table,
 .table-actions {
   position: relative;
   height: 56px;
+}
+
+.preloader-container {
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: #fff;
+  color: rgba(0,0,0,.54);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
 }
 
 .add-button {
